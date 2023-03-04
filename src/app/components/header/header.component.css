@@ -1,0 +1,35 @@
+
+
+.container{
+  background-color: var(--second-bg-color);
+  padding: 2%;
+  color: var(--title-color);
+  display: grid;
+  grid-template: repeat(2, 10vh) / repeat(4, 1fr);
+  grid-template-areas:
+    "image title title title"
+    "image title title title";
+  text-align: center;
+}
+
+.title{
+  grid-column: 2 / 5;
+  align-self: end;
+  color: var(--title-color);
+  font-size: 48px;
+  letter-spacing: 3.2px;
+  margin: 0;
+}
+
+.sub_title{
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  letter-spacing: 1px;
+}
+
+.img_profile{
+  grid-area: image;
+  object-fit: cover;
+  place-self: center;
+  align-self: stretch;
+}

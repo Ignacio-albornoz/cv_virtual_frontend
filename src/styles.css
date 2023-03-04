@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  /*COLORS*/
+  --main-bg-color: #fff;
+  --second-bg-color: #0E1623;
+  --main-text-color: #3A3839;
+  --title-color: #fff;
+  --second-text-color: #997859;
+
+  /*FONT SIZE & WEIGHT*/
+  --title-font-size:1.5rem;
+  --title-font-weight:500;
+  --sub-title-font-size:1.0rem;
+  --title-font-weight:300;
+
+
+  /*MARGINS*/
+  --margin-very-hard:32px;
+  --margin-hard:16px;
+  --margin-medium:12px;
+  --margin-soft:8px;
+  --margin-very-soft:4px;
+
+  /*PADDING*/
+  --padding-very-hard:32px;
+  --padding-hard:16px;
+  --padding-medium:12px;
+  --padding-soft:8px;
+  --padding-very-soft:4px;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+
+}
