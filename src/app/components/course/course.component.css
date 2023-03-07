@@ -1,16 +1,20 @@
 .container{
   margin-inline: 4%;
   text-align: start;
+
 }
 
 .title{
+  font-size: var(--sub-title-font-size);
   margin-left: 0px;
+  margin-bottom: var(--margin-soft);
 }
 
 .information{
-
+  color: var(--second-text-color);
+  margin: var(--margin-very-soft) 0;
 }
 
 .description{
-
+  margin: var(--margin-soft) 0;
 }
