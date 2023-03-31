@@ -1,12 +1,15 @@
 .container{
-  margin-inline: 4%;
+  position: relative;
+  padding-inline: 4%;
   text-align: start;
-
+  margin-bottom: var(--margin-medium);
+  margin-top: var(--margin-medium);
 }
 
 .title{
   font-size: var(--sub-title-font-size);
   margin-left: 0px;
+  margin-top: 0;
   margin-bottom: var(--margin-soft);
 }
 
@@ -17,4 +20,14 @@
 
 .description{
   margin: var(--margin-soft) 0;
+}
+
+.marker{
+  position: absolute;
+  width: var(--sub-title-font-size);
+  height: var(--sub-title-font-size);
+  border-radius: 50%;
+  background-color: var(--second-text-color);
+  top: var(--margin-very-soft);
+  left: var(--marker-position-top);
 }

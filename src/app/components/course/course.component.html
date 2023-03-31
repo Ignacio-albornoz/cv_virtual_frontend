@@ -1,9 +1,9 @@
 <div [className]="'container'">
-  <h1 [className]="'title'">EXPERTO UNIVERSITARIO EN JAVASCRIPT</h1>
-  <h4 [className]="'information'">Universidad Tecnológica Nacional  - 90hs</h4>
-  <h4 [className]="'information'">2019 - Finalizado</h4>
-  <p [className]="'description'">Curso enfocado en desarrollo web en JavaScript (Angular,
-    React, NodeJS y mongoDB).</p>
+  <div [className]="'marker'"></div>
+  <h1 [className]="'title'">{{course.title}}</h1>
+  <h4 [className]="'information'">{{course.establishment}}  - {{course.duration}}hs </h4>
+  <h4 [className]="'information'">{{course.startYear}} - Finalizado</h4>
+  <p [className]="'description'">{{course.description}} </p>
 </div>
 
 
