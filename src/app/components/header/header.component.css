@@ -16,20 +16,25 @@
   grid-column: 2 / 5;
   align-self: end;
   color: var(--title-color);
-  font-size: 48px;
-  letter-spacing: 3.2px;
+  font-size: 3.3em;
+  letter-spacing: var(--letter-spacing-very-hard);
+  font-weight: 400;
   margin: 0;
 }
 
 .sub_title{
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-soft);
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-  letter-spacing: 1px;
+  font-size: var(--sub-title-font-size);
+  letter-spacing: var(--letter-spacing-medium);
+  font-weight: 200;
 }
 
 .img_profile{
   grid-area: image;
   object-fit: cover;
-  place-self: center;
+  place-self: end;
   align-self: stretch;
 }
