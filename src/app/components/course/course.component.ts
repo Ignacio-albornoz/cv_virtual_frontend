@@ -17,7 +17,7 @@ export class CourseComponent {
     startMonth: 1,
     startYear: 2000,
     establishment: '',
-    technologies: '',
-    categories: ''
+    technologies: [],
+    categories: []
   }
 }

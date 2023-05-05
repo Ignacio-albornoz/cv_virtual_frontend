@@ -8,6 +8,12 @@
   padding: 0;
 }
 
+@media (min-width: 480px) {
+  .container{
+    grid-template: 1fr / repeat(2, 1fr);
+  }
+}
+
 .title{
   font-size: var(--title-font-size);
   text-align: center;
@@ -23,12 +29,9 @@
   position: relative;
 }
 
-
 .li-item::marker{
   display: none;
 }
-
-
 
 .item{
   width: 100%;
