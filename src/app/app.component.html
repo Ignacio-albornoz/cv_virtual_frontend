@@ -1,8 +1,2 @@
 <app-header [className]="'header'"></app-header>
-<ul [className]="'container'">
-  <h1 [className]="'title'" >CURSOS</h1>
-  <li [className]="'li-item'" *ngFor="let course of courses">
-    <app-course [className]="'item'" [course]="course" width="100"></app-course>
-  </li>
-
-</ul>
+<app-courses></app-courses>

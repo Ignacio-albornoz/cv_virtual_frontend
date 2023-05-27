@@ -2,10 +2,10 @@
 
 .container{
   background-color: var(--second-bg-color);
-  padding: 2%;
+  padding: 1.4%;
   color: var(--title-color);
   display: grid;
-  grid-template: repeat(2, 10vh) / repeat(4, 1fr);
+  grid-template: repeat(2, 12vh) / repeat(4, 1fr);
   grid-template-areas:
     "image title title title"
     "image title title title";
@@ -16,7 +16,7 @@
   grid-column: 2 / 5;
   align-self: end;
   color: var(--title-color);
-  font-size: 3.3em;
+  font-size: 2.4em;
   letter-spacing: var(--letter-spacing-very-hard);
   font-weight: 400;
   margin: 0;
@@ -33,8 +33,16 @@
 }
 
 .img_profile{
+  
   grid-area: image;
   object-fit: cover;
   place-self: end;
   align-self: stretch;
+  overflow: visible;
+}
+
+@media screen and (min-width: 992px) {
+  .img_profile{
+    min-height: 20vh;
+  }
 }

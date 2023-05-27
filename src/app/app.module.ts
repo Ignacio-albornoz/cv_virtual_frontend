@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CourseComponent } from './components/course/course.component';
+import { CoursesComponent } from './components/courses/courses.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { CourseComponent } from './components/course/course.component';
     AppComponent,
     HeaderComponent,
     CourseComponent,
+    CoursesComponent,
   ],
   imports: [
     BrowserModule,

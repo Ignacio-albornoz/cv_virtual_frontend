@@ -10,7 +10,7 @@ import { Course } from "./models/course.model";
 export class AppComponent {
   title = "cv_virtual";
 
-  courses: Course[] = [
+  seed: Course[] = [
     {
       title: "Curso de Inglés Básico A1: Fechas, Horas y Expresiones Simples",
       description: "",

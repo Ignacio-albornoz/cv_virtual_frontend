@@ -34,41 +34,31 @@
   --letter-spacing-soft:1.5px;
 
   /*MARKER*/
-  --marker-position-top: -0.75em;
-
-  /*MEDIA QUERY*/
-  
-
-  @media screen and (min-width: 768px) {
-    --very-hard: 24px;
-    --hard: 12px;
-    --medium: 8px;
-    --soft: 4px;
-    --very-soft: 2px;
-  }
-
-  @media screen and (min-width: 992px) {
-    --very-hard: 28px;
-    --hard: 12px;
-    --medium: 8px;
-    --soft: 4px;
-    --very-soft: 2px;
-  }
-  @media screen and (max-width: 1200px) {
-    --very-hard:32px;
-    --hard:16px;
-    --medium:12px;
-    --soft:8px;
-    --very-soft:4px;
-  }
-
+  --marker-position-top: -0.75em;  
 }
 
 body{
   font-family: 'Open Sans', sans-serif;
   background-color: #E6E4DB;
+  margin: 0;
 }
 
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 480px) {
+  :root{
+    --very-hard: 16px;
+    --hard: 8px;
+    --medium: 6px;
+    --soft: 4px;
+    --very-soft: 2px;
+  }
+  body{
+    font-size: 8px;
+  }
+}
 @media screen and (min-width: 480px) {
   :root{
     --very-hard: 16px;
@@ -77,7 +67,11 @@ body{
     --soft: 4px;
     --very-soft: 2px;
   }
+  body{
+    font-size: 10px;
+  }
 }
+
 
 @media screen and (min-width: 768px) {
   :root{
@@ -87,25 +81,47 @@ body{
     --soft: 4px;
     --very-soft: 2px;
   }
-
-  @media screen and (min-width: 992px) {
-    :root{
-      --very-hard: 28px;
-      --hard: 12px;
-      --medium: 8px;
-      --soft: 4px;
-      --very-soft: 2px;
-    }
+  body{
+    font-size: 12px;
   }
-
-  @media screen and (min-width: 1200px) {
-    :root{
-      --very-hard:32px;
-      --hard: 16px;
-      --medium: 12px;
-      --soft: 8px;
-      --very-soft: 4px;
-    }
-  }
-
 }
+
+@media screen and (min-width: 880px) {
+  body{
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  :root{
+    --very-hard: 28px;
+    --hard: 12px;
+    --medium: 8px;
+    --soft: 4px;
+    --very-soft: 2px;
+  }
+  body{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1092PX) {
+  body{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root{
+    font-size: 16px;
+    --very-hard:32px;
+    --hard: 16px;
+    --medium: 12px;
+    --soft: 8px;
+    --very-soft: 4px;
+  }
+  body{
+    font-size: 16px;
+  }
+}
+

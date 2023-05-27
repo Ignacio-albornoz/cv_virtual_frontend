@@ -1,12 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Course } from 'src/app/models/course.model';
+
 
 @Component({
   selector: 'app-course',
   templateUrl: './course.component.html',
   styleUrls: ['./course.component.css']
 })
-export class CourseComponent {
+export class CourseComponent implements OnInit{
+  
   @Input() course: Course = {
     id: 0,
     title: '',
@@ -19,5 +21,16 @@ export class CourseComponent {
     establishment: '',
     technologies: [],
     categories: []
+  }
+
+
+  formatTitle(title: string) {
+    return title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
+  }
+  
+
+  constructor(){}
+
+  ngOnInit(): void {
   }
 }
