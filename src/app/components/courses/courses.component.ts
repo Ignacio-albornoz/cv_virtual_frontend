@@ -21,6 +21,7 @@ export class CoursesComponent implements OnInit{
     this.coursesService.getAllCourses()
     .subscribe(data => {
       this.courses = data
+      console.log(this.courses)
     })
   }
 

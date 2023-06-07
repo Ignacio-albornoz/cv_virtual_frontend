@@ -4,8 +4,9 @@
   background-color: var(--second-bg-color);
   padding: 1.4%;
   color: var(--title-color);
+  border: 2px solid var(--second-bg-color);
   display: grid;
-  grid-template: repeat(2, 12vh) / repeat(4, 1fr);
+  grid-template: repeat(2, 6em) / repeat(4, 1fr);
   grid-template-areas:
     "image title title title"
     "image title title title";
@@ -22,9 +23,14 @@
   margin: 0;
 }
 
+@media (max-width: 375px) {
+  .title{
+      font-size: 2em;
+  }
+}
+
 .sub_title{
   text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-soft);
   grid-column: 3 / 4;
   grid-row: 2 / 3;
   font-size: var(--sub-title-font-size);

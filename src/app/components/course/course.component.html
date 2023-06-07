@@ -1,8 +1,8 @@
 <div [className]="'container'">
   <div [className]="'marker'"></div>
-  <h1 [className]="'title'">{{formatTitle(course.title)}}</h1>
-  <h4 [className]="'information'">{{course.establishment}}  - {{course.duration}}hs </h4>
-  <h4 [className]="'information'">{{course.startYear}} - Finalizado</h4>
+  <h1 [className]="'title'">{{course.title}}</h1>
+  <h4 [className]="'information-place'">{{course.establishment}}  - {{course.duration}}hs </h4>
+  <h4 [className]="'information-date'">{{course.startYear}} - Finalizado</h4>
   <p [className]="'description'">{{course.description}} </p>
 </div>
 

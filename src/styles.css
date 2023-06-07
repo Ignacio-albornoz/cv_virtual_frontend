@@ -1,4 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+  max-width: 1024px;
+    background: #cacaca;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 :root{
 
   /*COLORS*/
@@ -13,6 +24,9 @@
   --title-font-weight:400;
   --sub-title-font-size:1.2em;
   --sub-title-font-weight:300;
+  --title-course-font-size: 1.2em;
+  --text-font-size: 0.8em;
+  
   /*MARGINS*/
   --margin-very-hard: var(--very-hard);
   --margin-hard: var(--hard);
@@ -94,7 +108,7 @@ body{
 
 @media screen and (min-width: 992px) {
   :root{
-    --very-hard: 28px;
+    --very-hard: 14px;
     --hard: 12px;
     --medium: 8px;
     --soft: 4px;
@@ -107,7 +121,7 @@ body{
 
 @media screen and (min-width: 1092PX) {
   body{
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -121,7 +135,7 @@ body{
     --very-soft: 4px;
   }
   body{
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 

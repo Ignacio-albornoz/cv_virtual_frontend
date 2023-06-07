@@ -5,6 +5,9 @@
   margin-bottom: var(--margin-medium);
   margin-top: var(--margin-medium);
 }
+.container:hover > *{
+  display: block;
+}
 
 .title{
   font-size: var(--sub-title-font-size);
@@ -13,13 +16,31 @@
   margin-bottom: var(--margin-soft);
 }
 
-.information{
+.information-place{
   color: var(--second-text-color);
   margin: var(--margin-very-soft) 0;
+  font-size: var(--text-font-size);
+}
+.information-date{
+  color: var(--second-text-color);
+  margin: var(--margin-very-soft) 0;
+  font-size: var(--text-font-size);
+}
+@media (max-width: 375px) {
+  .information-place{
+    display: none;
+  }
 }
 
 .description{
   margin: var(--margin-soft) 0;
+  font-size: var(--text-font-size);
+}
+
+@media (max-width: 375px) {
+  .description{
+    display: none;
+}
 }
 
 .marker{
