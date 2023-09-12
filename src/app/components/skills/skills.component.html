@@ -1,0 +1,8 @@
+<div [className]="'container'" *ngIf="listOfSkills else loading">
+    <li [className]="'li-item'" *ngFor="let skills of listOfSkills">
+        <p [className]="'text'">{{skills.split("1")}}</p>
+      </li>
+</div>
+<ng-template #loading>
+  <h1>LOADING!</h1>
+</ng-template>

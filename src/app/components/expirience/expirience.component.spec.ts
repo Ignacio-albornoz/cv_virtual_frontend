@@ -8,8 +8,8 @@ describe('ExpirienceComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExpirienceComponent ]
-    })
+    imports: [ExpirienceComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(ExpirienceComponent);

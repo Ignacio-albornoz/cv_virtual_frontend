@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from 'src/app/models/course.model';
-import { CoursesService } from 'src/app/services/courses/courses.service';
-import { GenerateTitleWithOpeniaService } from 'src/app/services/generate-title-with-openai/generate-title-with-openai.service';
-import { CreateCoverLetterWithOpenaiService } from 'src/app/services/create-cover-letter-with-openai/create-cover-letter-with-openai.service'; 
+import { CoursesService } from 'src/app/services/GET/get-courses/courses.service';
+import { GenerateTitleWithOpeniaService } from 'src/app/services/GENERATE/generate-title-with-openai/generate-title-with-openai.service';
+import { CreateCoverLetterWithOpenaiService } from 'src/app/services/GENERATE/generate-cover-letter-with-openai/create-cover-letter-with-openai.service'; 
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.css'],
+    standalone: true
 })
 export class HeaderComponent implements OnInit{
 
@@ -32,6 +33,7 @@ export class HeaderComponent implements OnInit{
     .subscribe(data => {
       this.courses = data
       this.titles = data.map( courses => courses.title);
+      console.log(this.titles); 
     })
   }
 }

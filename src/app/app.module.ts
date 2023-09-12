@@ -11,25 +11,29 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { ExpirienceComponent } from './components/expirience/expirience.component';
 import { PersonalDataComponent } from './components/personal-data/personal-data.component';
 import { AddCourseComponent } from './components/add-course/add-course.component';
+import { SecondaryThemeComponent } from './components/secondary-theme/secondary-theme.component';
+import { TitleComponent } from './components/title/title.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    CourseComponent,
-    CoursesComponent,
-    ExpirienceComponent,
-    PersonalDataComponent,
-    AddCourseComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule,
+        HeaderComponent,
+        CourseComponent,
+        CoursesComponent,
+        ExpirienceComponent,
+        PersonalDataComponent,
+        AddCourseComponent,
+        SecondaryThemeComponent,
+        TitleComponent,
+        SkillsComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Configuration, OpenAIApi } from 'openai';
 import { EMPTY, catchError, from, map } from 'rxjs';
-import { environment } from 'src/environment/environment';
+import { environment } from 'environment/environment';
 import { PromptToGenerateTitle } from 'src/app/prompt/generate-title';
 
 const APIKEY = environment.apiKey;

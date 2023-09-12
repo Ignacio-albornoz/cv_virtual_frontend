@@ -1,5 +1,11 @@
-<div class="container">
-    <app-header [className]="'header'"></app-header>
-    <app-courses></app-courses>
-    <app-add-course></app-add-course>
+<div *ngIf="default else secondaryTheme">
+    <div class="default-theme-container">
+        <app-header [className]="'header'"></app-header>
+        <app-personal-data></app-personal-data>
+        <app-courses></app-courses>
+        <app-add-course></app-add-course>
+    </div>
 </div>
+<ng-template #secondaryTheme>
+    <app-secondary-theme></app-secondary-theme>
+</ng-template>

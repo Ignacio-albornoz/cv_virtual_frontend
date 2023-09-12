@@ -3,9 +3,10 @@ import { Course } from 'src/app/models/course.model';
 
 
 @Component({
-  selector: 'app-course',
-  templateUrl: './course.component.html',
-  styleUrls: ['./course.component.css']
+    selector: 'app-course',
+    templateUrl: './course.component.html',
+    styleUrls: ['./course.component.css'],
+    standalone: true
 })
 export class CourseComponent implements OnInit{
   

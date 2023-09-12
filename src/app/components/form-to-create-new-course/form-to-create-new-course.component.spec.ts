@@ -8,8 +8,8 @@ describe('FormToCreateNewCourseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormToCreateNewCourseComponent ]
-    })
+    declarations: [FormToCreateNewCourseComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(FormToCreateNewCourseComponent);

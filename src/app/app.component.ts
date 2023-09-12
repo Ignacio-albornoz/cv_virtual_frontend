@@ -8,9 +8,41 @@ import { Course } from "./models/course.model";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "cv_virtual";
+  title: string = "cv_virtual";
+
+  default: boolean = false;
 
   seed: Course[] = [
+    {
+      title: "Curso de Inglés Básico A2: Preguntas y Respuestas Comunes",
+      description: "",
+      duration: 0,
+      finishedMonth: 3,
+      finishedYear: 2023,
+      establishment: "Platzi",
+      technologies: [],
+      categories: ["Idiomas"]
+    },
+    {
+      title: "Curso de Inglés Básico A1: Presente Simple y Vocabulario Común",
+      description: "",
+      duration: 0,
+      finishedMonth: 3,
+      finishedYear: 2023,
+      establishment: "Platzi",
+      technologies: [],
+      categories: ["Idiomas"]
+    },
+    {
+      title: "Taller de Inglés Básico para Descripciones Personales",
+      description: "",
+      duration: 0,
+      finishedMonth: 9,
+      finishedYear: 2022,
+      establishment: "Platzi",
+      technologies: [],
+      categories: ["Idiomas"]
+    },
     {
       title: "Curso de Inglés Básico A1: Fechas, Horas y Expresiones Simples",
       description: "",
