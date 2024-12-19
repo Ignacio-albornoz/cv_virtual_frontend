@@ -1,7 +1,11 @@
-<app-header [className]="'header'"></app-header>
-<ul [className]="'container'">
-  <h1 [className]="'title'" >EXPERIENCIA</h1>
-  <li [className]="'item'"><app-course></app-course></li>
-  <li [className]="'item'"><app-course></app-course></li>
-  <li [className]="'item'"><app-course></app-course></li>
-</ul>
+<div *ngIf="default else secondaryTheme">
+    <div class="default-theme-container">
+        <app-header [className]="'header'"></app-header>
+        <app-personal-data></app-personal-data>
+        <app-courses></app-courses>
+        <app-add-course></app-add-course>
+    </div>
+</div>
+<ng-template #secondaryTheme>
+    <app-secondary-theme></app-secondary-theme>
+</ng-template>

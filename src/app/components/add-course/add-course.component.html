@@ -1,0 +1,51 @@
+<h2>Agregar Curso</h2>
+<form (ngSubmit)="onSubmit()" #courseForm="ngForm">
+  <div class="form-group">
+    <label for="title">Título:</label>
+    <input type="text" class="form-control" id="title" required [(ngModel)]="course.title" name="title">
+  </div>
+  <div class="form-group">
+    <label for="description">Descripción:</label>
+    <textarea class="form-control" id="description" [(ngModel)]="course.description" name="description"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="duration">Duración:</label>
+    <input type="number" class="form-control" id="duration" [(ngModel)]="course.duration" name="duration">
+  </div>
+  <div class="form-group">
+    <label for="finishedMonth">Mes de finalización:</label>
+    <input type="number" class="form-control" id="finishedMonth" required [(ngModel)]="course.finishedMonth" name="finishedMonth">
+  </div>
+  <div class="form-group">
+    <label for="finishedYear">Año de finalización:</label>
+    <input type="number" class="form-control" id="finishedYear" required [(ngModel)]="course.finishedYear" name="finishedYear">
+  </div>
+  <div class="form-group">
+    <label for="startMonth">Mes de inicio:</label>
+    <input type="number" class="form-control" id="startMonth" [(ngModel)]="course.startMonth" name="startMonth">
+  </div>
+  <div class="form-group">
+    <label for="startYear">Año de inicio:</label>
+    <input type="number" class="form-control" id="startYear" [(ngModel)]="course.startYear" name="startYear">
+  </div>
+  <div class="form-group">
+    <label for="establishment">Establecimiento:</label>
+    <input type="text" class="form-control" id="establishment" [(ngModel)]="course.establishment" name="establishment">
+  </div>
+<!--   <div class="form-group">
+    <label for="">Tecnologías:</label><br />
+    <input type='checkbox' value='Angular' [(ngModel)]='technologies.Angular' name='technologies'>Angular<br />
+    <input type='checkbox' value='React' [(ngModel)]='technologies.React' name='technologies'>React<br />
+    <input type='checkbox' value='Vue' [(ngModel)]='technologies.Vue' name='technologies'>Vue<br />
+  </div> -->
+  <!-- <div class='form-group'>
+      <label for="">Categorías:</label><br />
+      <select multiple [(ngModel)]='categories' name='categories'>
+          <option *ngFor='let category of categoryList' [value]='category'>{{category}}</option>
+      </select>
+  </div> -->
+
+  <button type='submit' [disabled]='!courseForm.valid'>Agregar</button>
+
+</form>
+

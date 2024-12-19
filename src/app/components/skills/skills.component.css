@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-flow: wrap;
+    padding: 4px 2%;
+    justify-items: center;
+    border-bottom: 3.4px solid var(--second-text-color);
+}
+.text{
+    font-size: .9em;
+    color: var(--second-text-color);
+    font-weight: 300;
+    margin: 8px;
+}

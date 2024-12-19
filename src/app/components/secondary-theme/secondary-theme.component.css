@@ -1,0 +1,51 @@
+.container{
+  color: var(--title-color);
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "image header header header"
+    "decorate courses courses courses"
+    "personal-data courses courses courses"
+    "competencias courses courses courses"
+    "otros-datos courses courses courses";
+}
+
+.title{
+  grid-area: header;
+  display: flex;
+}
+
+.decorate{
+  background-color: var(--second-bg-color);
+}
+
+.img_wrap{
+  display: flex;
+  justify-content: center;
+  grid-area: image;
+  background-color: var(--second-bg-color);
+  padding: 1.4%;
+}
+
+.img_profile{
+  place-self: center;
+  object-fit: cover;
+  align-self: stretch;
+  overflow: visible;
+  max-width: 200px;
+
+}
+.courses{
+  grid-area: courses;
+  color: black;
+}
+
+.header{
+  grid-area: header;
+}
+
+.personal-data{
+  grid-area: personal-data;
+}
+  
